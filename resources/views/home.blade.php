@@ -1,11 +1,9 @@
 
-
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
     
 {{ auth()->user()->name }}
-
 
 <form action="/logout" method="POST">
     @csrf
